@@ -30,6 +30,11 @@ html{
     margin-top: 16px !important;
 }
 
+.mt-32{
+    margin-top: 32px !important;
+}
+
+
 .text-white{
     color:white !important;
 }
@@ -77,7 +82,6 @@ html{
 /*header*/
 #header {
     height: 46px;
-    width: 800px;
     max-width: 100%;
     background-color: black;
     position: fixed;
@@ -85,6 +89,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    
 }
 
 #nav{
@@ -131,7 +136,7 @@ html{
 }
 
 #nav li:hover .subnav{
-    display:block;  
+    display: block;  
 }
 
 #nav .subnav  a{
@@ -148,16 +153,36 @@ html{
 
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.mobile-menu-btn,
 .search-btn{
     float:right;
     padding: 0 23px;
     cursor: pointer;
+    
 }
+
 
 #header .search-btn:hover{
     background-color: red;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color:#000;
+}
+
+#header .menu-icon,
 #header .search-icon{
     color: white;
     font-size: 20px;
@@ -201,6 +226,7 @@ html{
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -519,7 +545,7 @@ html{
     color: #000;
 }
 
-.map-section{
+.map-section .img-map{
     width: 100%;
 }
 
